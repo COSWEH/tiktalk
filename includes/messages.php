@@ -22,7 +22,7 @@ session_start();
         $gender = $data['gender'];
         $getTime = $data['send_at'];
 
-        $formattedTime = date("l h:i A", strtotime($getTime));
+        $formattedTime = date("l H:i", strtotime($getTime));
 
         if ($gender == "male") {
             $getGenderIcon = "<i class='bi bi-gender-male fs-9'></i>";
@@ -40,7 +40,7 @@ session_start();
         </div>
         <p class='fs-9 ms-auto'>
             <small>
-                <?php echo "$formattedTime "; ?>
+                <?php echo "$formattedTime " . date('A'); ?>
             </small>
         </p>
         <hr>

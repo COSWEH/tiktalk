@@ -28,7 +28,7 @@ use Infobip\Model\SmsAdvancedTextualRequest;
 
 </head>
 
-<body style="background-color: #F9F6EE;">
+<body class="bg-secondary-subtle">
 
     <div class="d-flex justify-content-center align-items-center mt-5">
         <?php
@@ -131,14 +131,16 @@ use Infobip\Model\SmsAdvancedTextualRequest;
     </div>
 
 
-    <div class=" d-flex justify-content-center align-items-center mt-5 p-3">
+    <div class="d-flex justify-content-center align-items-center mt-5 p-3">
         <div class="card shadow-lg" style="width: 24rem;">
             <div class="card-header border-0 bg-dark">
 
             </div>
-            <div class="card-body" style="font-family: Montserrat;">
+            <div class="card-body shadow-lg" style="font-family: Montserrat;">
                 <h6 class="card-subtitle mb-2 text-body-secondary text-center"><small>Welcome to</small></h6>
-                <h4 class=" card-title text-center fw-bold">Tiktalk <i class="bi bi-emoji-laughing"></i></h4>
+                <h4 class=" card-title text-center fw-bold text-dark-emphasis">
+                    Tiktalk <i class="bi bi-emoji-laughing"></i>
+                </h4>
 
                 <form action="" method="POST" class="form-group">
                     <div class="mt-5 mb-3">
@@ -165,7 +167,7 @@ use Infobip\Model\SmsAdvancedTextualRequest;
                         </div>
                     </div>
                     <div class="d-grid">
-                        <button class="btn btn-outline-dark btn-sm" id="btnLogin" name="btnLogin" type="submit">Login</button>
+                        <button class="btn btn-dark btn-sm" id="btnLogin" name="btnLogin" type="submit">Login</button>
                     </div>
                     <div>
                         <!-- if empty, show this error -->
@@ -175,7 +177,7 @@ use Infobip\Model\SmsAdvancedTextualRequest;
                     </div>
                     <hr>
                     <div class="text-center mt-3">
-                        <a href="register.php" class="text-dark"><small>Create account</small></a>
+                        <a href="register.php" class="text-dark-emphasis"><small>Create account</small></a>
                     </div>
                 </form>
             </div>

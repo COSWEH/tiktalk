@@ -38,7 +38,7 @@ echo $userotp;
 
 </head>
 
-<body style="background-color: #F9F6EE;">
+<body class="bg-secondary-subtle">
 
     <div class="d-flex justify-content-center align-items-center mt-5">
         <?php
@@ -55,12 +55,12 @@ echo $userotp;
     </div>
 
     <div class="d-flex justify-content-center align-items-center mt-5 p-3">
-        <div class="card shadow-lg " style="width: 24rem;">
+        <div class="card shadow-lg" style="width: 24rem;">
             <div class="card-header border-0 bg-dark">
 
             </div>
-            <div class="card-body" style="font-family: Montserrat;">
-                <h4 class=" card-title text-center fw-bold">otp verification</h4>
+            <div class="card-body shadow-lg" style="font-family: Montserrat;">
+                <h4 class=" card-title text-center fw-bold text-dark-emphasis">otp verification</h4>
                 <h6 class="card-subtitle mb-2 text-body-secondary text-center"><small>Your OTP code sent to your email address * <?php echo $dbEmail; ?>.</small></h6>
 
                 <form method="POST" class="form-group">
@@ -74,7 +74,7 @@ echo $userotp;
                     </div>
                     <hr>
                     <div class="text-center mt-3">
-                        <a href="logout.php" class="text-dark"><small>Cancel</small></a>
+                        <a href="logout.php" class="text-dark-emphasis"><small>Cancel</small></a>
                     </div>
                 </form>
             </div>

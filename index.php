@@ -41,29 +41,59 @@ if ($countUsern > 0) {
 </head>
 
 <body style="font-family: Montserrat;" class="bg-dark">
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar  sticky-top navbar-expand-md bg-secondary-subtle">
         <div class="container">
-            <a class="navbar-brand fs-2" href="index.php">TikTalk</a>
+            <a class="navbar-brand fs-2 text-dark-emphasis" href="index.php">TikTalk</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="bi bi-list fs-1"></i></span>
             </button>
             <div class=" collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-3">
-                        <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fs-5" aria-current="page"><?php echo ucwords($username); ?></a>
-                    </li>
-                </ul>
-                <div class="d-flex">
-                    <a href="logout.php" class="btn btn-dark btn-outline-dark btn-sm text-light">
-                        <i class="bi bi-box-arrow-left fw-bold"></i><small class="px-2">Logout</small>
-                    </a>
+                <div class="btn-group ms-auto">
+                    <button class="btn btn-outline-dark btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-fill-gear fs-6"></i>
+                        Account
+                    </button>
+                    <ul class="dropdown-menu bg-secondary-subtle" style="width: 240px;">
+                        <li class="nav-item mx-2">
+                            <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fs-6 text-dark-emphasis" aria-current="page">
+                                <span class="fs-9">Username:</span>
+                                <?php
+                                echo ucwords($username);
+                                ?>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <!-- email -->
+                            <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fs-6 text-dark-emphasis" aria-current="page">
+                                <span class="fs-9">Email:</span>
+                                <?php
+                                echo ucwords($email);
+                                ?>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fs-6 text-dark-emphasis" aria-current="page">
+                                <span class="fs-9">Gender:</span>
+                                <?php
+                                echo ucwords($gender);
+                                ?>
+                            </a>
+                        </li>
+                        <!-- logout button -->
+                        <div class="mt-4 mx-2">
+                            <a href="logout.php" class="btn btn-dark btn-outline-dark btn-sm text-light">
+                                <i class="bi bi-box-arrow-left fw-bold"></i><small class="px-2">Logout</small>
+                            </a>
+                        </div>
+                    </ul>
                 </div>
+
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5 p-5">
-        <div class="card shadow-lg">
+    <div class="container mt-2">
+        <div class="card shadow-lg bg-secondary-subtle">
             <div class="card-body">
 
                 <!-- show all messages -->
@@ -79,7 +109,6 @@ if ($countUsern > 0) {
                     <button class="btn btn-dark btn-lg" id="btnSendMessage"><i class="bi bi-send"></i></button>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -95,7 +124,6 @@ if ($countUsern > 0) {
 
 
         //send message and reload
-        <?php echo "var id = '" . $getUserid . "';"; ?>
         $(document).ready(function() {
             function sendMessage() {
                 let message = $("#messageInput").val();
@@ -119,7 +147,7 @@ if ($countUsern > 0) {
             function updateMessages() {
                 $.post('includes/messages.php', {}, function(data) {
                     $("#messages").html(data);
-                    setTimeout(updateMessages, 1000); // Poll again after 1 second
+                    setTimeout(updateMessages, 500); // Poll again after 0.5 second
                 });
             }
 
@@ -128,7 +156,7 @@ if ($countUsern > 0) {
             });
 
             $("#messageInput").on("input", function() {
-                $("#errorMessage").hide(); // Hide the error message when user types something
+                $("#errorMessage").hide(); // Hide the error message
             });
 
             // Initial call to load messages

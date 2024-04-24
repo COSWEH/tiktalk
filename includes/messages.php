@@ -38,8 +38,8 @@
             }
             ?>
 
-            <div class="card border-dark ms-auto rounded-4">
-                <div class="card-body">
+            <div class="card border-dark ms-auto rounded-3 bg-secondary-subtle">
+                <div class="card-body text-dark-emphasis">
                     <h6><?php echo $username . " " . $getGenderIcon; ?></h6>
                     <p class="card-text fs-6" style="font-family: Roboto;">
                         <?php echo "$message "; ?>

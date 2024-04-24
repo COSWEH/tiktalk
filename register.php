@@ -23,7 +23,7 @@ session_start();
 
 </head>
 
-<body style="background-color: #F9F6EE;">
+<body class="bg-secondary-subtle">
 
     <div class="d-flex justify-content-center align-items-center mt-5">
         <?php
@@ -90,8 +90,9 @@ session_start();
             <div class="card-header border-0 bg-dark">
 
             </div>
-            <h3 class=" card-title text-center fw-bold mt-2">Let's Start</h3>
+
             <div class="card-body shadow-lg" style="font-family: Montserrat;">
+                <h3 class="card-title text-center fw-bold mt-2 text-dark-emphasis">Let's Start</h3>
                 <form action="" method="POST" class="form-group">
                     <div class="mt-5 mb-3">
                         <div>
@@ -112,7 +113,7 @@ session_start();
                             <input type="password" name="password" id="password" placeholder="Password" class="form-control mb-3 fs-9" pattern=".{8,}"><span class="icon position-absolute top-50 end-0 translate-middle-y p-3" id="showPasswordIcon"><i class=" bi bi-eye-slash-fill"></i></span>
                         </div>
 
-                        <div class="container">
+                        <div class="container text-dark-emphasis">
                             <p class="mt-3 fs-9">Gender:</p>
                             <div class="form-group">
                                 <div class="form-check mt-2">

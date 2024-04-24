@@ -2,6 +2,7 @@
 include('includes/connection.inc.php');
 session_start();
 
+
 $getUserid = $_SESSION['userid'];
 $username = "";
 $email = "";

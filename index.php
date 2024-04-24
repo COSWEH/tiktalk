@@ -53,7 +53,7 @@ if ($countUsern > 0) {
                         <i class="bi bi-person-fill-gear fs-6"></i>
                         Account
                     </button>
-                    <ul class="dropdown-menu bg-secondary-subtle" style="width: 240px;">
+                    <ul class="dropdown-menu bg-secondary-subtle" style="min-width: 246px;">
                         <li class="nav-item mx-2">
                             <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fs-6 text-dark-emphasis" aria-current="page">
                                 <span class="fs-9">Username:</span>
@@ -124,6 +124,7 @@ if ($countUsern > 0) {
 
 
         //send message and reload
+        <?php echo 'let id = "' . $getUserid . '";'; ?>
         $(document).ready(function() {
             function sendMessage() {
                 let message = $("#messageInput").val();

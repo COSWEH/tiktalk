@@ -146,6 +146,7 @@ use Infobip\Model\SmsAdvancedTextualRequest;
                     <div class="mt-5 mb-3">
                         <div>
                             <small>
+                                <!-- show username condition -->
                                 <p id="threechar" class="text-muted text-center fs-9">
 
                                 </p>
@@ -156,6 +157,7 @@ use Infobip\Model\SmsAdvancedTextualRequest;
                         </div>
                         <div>
                             <small>
+                                <!-- show password condition -->
                                 <p id="eightchar" class="text-muted text-center fs-9">
 
                                 </p>

@@ -103,6 +103,7 @@ session_start();
                         </div>
                         <div>
                             <small>
+                                <!-- show password condition -->
                                 <p id="eightchar" class="text-muted text-center fs-9">
 
                                 </p>
@@ -166,7 +167,7 @@ session_start();
     </script>
 
     <script>
-        // show password
+        // eye icon for password field
         const passwordInput = document.getElementById('password');
         const showPasswordIcon = document.getElementById('showPasswordIcon');
 

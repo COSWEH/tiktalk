@@ -5,9 +5,7 @@ session_start();
 $getUserid = $_POST['id'];
 $message = mysqli_real_escape_string($con, $_POST['message']);
 
-$send_at = date("Y-m-d h:i:s");
-
-$query = mysqli_query($con, "INSERT INTO `tbl_message`(`messageid`, `message`, `userid`, `send_at`) VALUES ('', '$message', '$getUserid', '$send_at')");
+$query = mysqli_query($con, "INSERT INTO `tbl_message`(`messageid`, `message`, `userid`, `send_at`) VALUES ('', '$message', '$getUserid', CURRENT_TIMESTAMP)");
 
 if (!$query) {
     die('Error');

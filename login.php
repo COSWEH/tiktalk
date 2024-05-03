@@ -136,7 +136,7 @@ use Infobip\Model\SmsAdvancedTextualRequest;
             <div class="card-header border-0 bg-dark">
 
             </div>
-            <div class="card-body shadow-lg" style="font-family: Montserrat;">
+            <div class="card-body shadow-lg" style="font-family: Montserrat, Arial;">
                 <h6 class="card-subtitle mb-2 text-body-secondary text-center"><small>Welcome to</small></h6>
                 <h4 class=" card-title text-center fw-bold text-dark-emphasis">
                     Tiktalk <i class="bi bi-emoji-laughing"></i>

@@ -41,7 +41,7 @@ if ($countUsern > 0) {
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
-<body style="font-family: Montserrat;" class="bg-dark">
+<body style="font-family: Montserrat, Arial;" class="bg-dark">
     <nav class="navbar  sticky-top navbar-expand-md bg-secondary-subtle">
         <div class="container">
             <a class="navbar-brand fs-2 text-dark-emphasis" href="index.php">TikTalk</a>

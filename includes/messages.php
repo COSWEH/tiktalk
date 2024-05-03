@@ -33,7 +33,7 @@ session_start();
         <div class="card border-dark ms-auto rounded-3 bg-secondary-subtle">
             <div class="card-body text-dark-emphasis">
                 <h6><?php echo $username . " " . $getGenderIcon; ?></h6>
-                <p class="card-text fs-6" style="font-family: Roboto;">
+                <p class="card-text fs-6" style="font-family: Roboto, Arial;">
                     <?php echo "$message "; ?>
                 </p>
             </div>

@@ -91,7 +91,7 @@ session_start();
 
             </div>
 
-            <div class="card-body shadow-lg" style="font-family: Montserrat;">
+            <div class="card-body shadow-lg" style="font-family: Montserrat, Arial;">
                 <h3 class="card-title text-center fw-bold mt-2 text-dark-emphasis">Let's Start</h3>
                 <form action="" method="POST" class="form-group">
                     <div class="mt-5 mb-3">

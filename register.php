@@ -99,7 +99,7 @@ session_start();
                             <input class="form-control mb-3 fs-9" name="username" type="text" placeholder="Username" minlength="3" required pattern="^[a-zA-Z]{2}[a-zA-Z0-9.@_\\-\\s]+$">
                         </div>
                         <div>
-                            <input class="form-control mb-3 fs-9" name="email" type="email" placeholder="Email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z{2,}$">
+                            <input class="form-control mb-3 fs-9" name="email" type="email" placeholder="Email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                         </div>
                         <div>
                             <small>
